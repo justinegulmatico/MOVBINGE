@@ -1,21 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Movie</title>
     <link rel="stylesheet" href="../../assets/CSS/backround.css">
     <link rel="stylesheet" href="../../assets/CSS/ui.css">
-    <?php include("../../Back_End/auth/user_logged.php"); ?>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="logo">
-            <a href="home.php" class="home"><h1>MOVBINGE</h1></a>
+            <a href="home.html" class="home"><h1>MOVBINGE</h1></a>
         </div>
         <ul>
-            <li><a href="../user/my_acc.php"><?php echo $username; ?></a></li>
-            <li><a href="../user/acc_contribution.php">My Contributions</a></li>
-            <li><a href="../../Back_End/auth/logout.php" onclick="return confirm('Are you sure to log out?');">Log Out</a></li>
+            <li><a href="../user/my_acc.html">Profile</a></li>
+            <li><a href="../user/acc_contribution.html">My Contributions</a></li>
+            <li><a href="../loging/login.html">Log Out</a></li>
         </ul>
     </nav>
 
@@ -23,9 +24,8 @@
         <h1 class="title">ADD NEW MOVIE</h1>
 
         <div class="box box-wide">
-            <form action="../../Back_End/actions/addmov_process.php" method="post">
-                
-                <input type="hidden" name="user_id" value="<?php echo $_SESSION['user_id'] ?? $id; ?>">
+            <form>
+                <input type="hidden" name="user_id" value="">
 
                 <div class="acc-group">
                     <label>Movie Title</label>
@@ -61,10 +61,11 @@
 
                 <div class="btn-group">
                     <input type="submit" name="madd" value="ADD MOVIE" class="btn">
-                    <a href="../user/acc_contribution.php" style="color: #666; font-size: 0.9rem; text-decoration: none;">Cancel</a>
+                    <a href="../user/acc_contribution.html" style="color: #666; font-size: 0.9rem; text-decoration: none;">Cancel</a>
                 </div>
 
             </form>     
         </div>
     </div>
 </body>
+</html>

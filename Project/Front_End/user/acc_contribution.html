@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contributions</title>
+    <link rel="stylesheet" href="../../assets/CSS/backround.css">
+    <link rel="stylesheet" href="../../assets/CSS/ui.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../movies/home.html" class="home"><h1>MOVBINGE</h1></a>
+        </div>
+        <ul>
+            <li><a href="my_acc.html">Profile</a></li>
+            <li><a href="acc_contribution.html">My Contributions</a></li>
+            <li><a href="../loging/login.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="">
+            <h1 class="title">MY CONTRIBUTIONS</h1>
+            
+            <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+                <a href="../movies/add_mov.html" class="btn">ADD NEW MOVIE</a>
+            </div>
+
+            <form class="search">
+                <input type="text" name="search" placeholder="Search Your Movies">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <section class="movie-list">
+            <table>
+               <thead>
+                   <tr>
+                       <th>Movie Name</th>
+                       <th>Year</th>
+                       <th>Genre</th>
+                       <th class="desc">Description</th>
+                       <th>Action</th>
+                   </tr>
+               </thead>
+               <tbody id="contribution-list">
+                   <tr>
+                       <td>Inception</td>
+                       <td>2010</td>
+                       <td>Sci-Fi</td>
+                       <td class="desc">A thief who steals corporate secrets...</td>
+                       <td>
+                           <a href="../movies/updatemovie.html"><input type="button" class="update" value="UPDATE"></a>
+                           <a href="#"><input type="button" class="delete" value="DELETE"></a>
+                       </td>
+                   </tr>
+               </tbody>
+            </table>
+
+            <div id="no-search-results" class="box" style="display: none; margin-top: 20px;">
+                <p style="text-align: center; color: white;">No results found.</p>
+                <div style="text-align: center; margin-top: 10px;">
+                    <a href="acc_contribution.html" class="btn" style="min-width: 100px; padding: 5px 10px;">Clear Search</a>
+                </div>
+            </div>
+
+            <div id="empty-contributions" class="box" style="display: none; margin-top: 20px;">
+                <p style="text-align: center; color: white;">You haven't contributed any movies yet.</p>
+            </div>
+        </section>  
+    </div>
+</body>
+</html>

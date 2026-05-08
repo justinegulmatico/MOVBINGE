@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Movie Details</title>
+    <link rel="stylesheet" href="../../assets/CSS/backround.css">
+    <link rel="stylesheet" href="../../assets/CSS/ui.css">
+    <link rel="stylesheet" href="../../assets/CSS/view.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html" class="home"><h1>MOVBINGE</h1></a>
+        </div>
+        <ul>
+            <li><a href="../user/my_acc.html">Profile</a></li>
+            <li><a href="../user/acc_contribution.html">My Contributions</a></li>
+            <li><a href="../loging/login.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box" style="width: 100%; max-width: 800px; padding: 50px;">
+            
+            <div id="movie-details">
+                <div class="movie-header">
+                    <h1 class="movie-title-big">Movie Title</h1>
+                    <span style="color: #ccc; font-size: 1.2rem;">(Year)</span>
+                </div>
+
+                <div class="detail-list">
+                    <div class="movie-detail-row">
+                        <span class="label">Genre</span>
+                        <span class="value">Genre Label</span>
+                    </div>
+
+                    <div class="movie-detail-row">
+                        <span class="label">Director</span>
+                        <span class="value">Director Name</span>
+                    </div>
+
+                    <div class="movie-detail-row">
+                        <span class="label">Cast</span>
+                        <span class="value">Cast Members</span>
+                    </div>
+
+                    <div class="movie-detail-row">
+                        <span class="label">Uploaded By</span>
+                        <span class="value" style="color: #e50914; font-weight: bold;">Username</span>
+                    </div>
+
+                    <div class="movie-detail-row">
+                        <span class="label">Description</span>
+                        <span class="value" style="text-align: justify;">Movie plot summary goes here.</span>
+                    </div>
+                </div>
+
+                <div class="btn-group" style="margin-top: 40px; flex-direction: row; justify-content: center; gap: 20px;">
+                    <a href="home.html" class="btn" style="background: transparent; border: 1px solid white;">GO BACK</a>
+                    
+                    <a href="updatemovie.html" class="btn" id="edit-btn">EDIT MOVIE</a>
+                </div>
+            </div>
+
+            <div id="no-movie-message" style="display: none;">
+                <h2 style='color:white; text-align:center;'>No movie selected.</h2>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

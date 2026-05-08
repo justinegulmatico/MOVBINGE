@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../../assets/CSS/backround.css">
+    <link rel="stylesheet" href="../../assets/CSS/ui.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html" class="home"><h1>MOVBINGE</h1></a>
+        </div>
+        <ul>
+            <li><a href="../user/my_acc.html">Profile</a></li>
+            <li><a href="../user/acc_contribution.html">My Contributions</a></li>
+            <li><a href="../loging/login.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div style="text-align: center; width: 100%; max-width: 800px; margin-bottom: 20px;">
+            <h1 class="title">MOVIE LIST</h1>
+            <form class="search">
+                <input type="text" name="search" placeholder="Search Movies">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <section class="movie-list">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Year</th>
+                        <th>Genre</th>
+                        <th class="desc">Description</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="movie-data">
+                    <tr>
+                        <td style="font-weight: bold;">Inception</td>
+                        <td>2010</td>
+                        <td style="color: #ccc;">Sci-Fi</td>
+                        <td class="desc" style="max-width: 300px;">A thief who steals corporate secrets...</td>
+                        <td>
+                            <a href="view_mov.html">
+                                <input type="button" class="view" value="VIEW">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="no-results" class="box" style="display: none; margin-top: 20px; text-align: center; padding: 40px;">
+                <h2 style="color: #fff;">No matches found</h2>
