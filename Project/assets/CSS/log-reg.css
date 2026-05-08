@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title h1{
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  font-family: fantasy;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  z-index: 1;
+  margin-top: -90px;
+  pointer-events: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  z-index: 10;
+}
+
+.wind-float{
+  background: rgba(20, 20, 20);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgb(20, 20, 20);
+  padding: 35px 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  color: white;
+  overflow: hidden;
+}
+
+.wind-float::before{
+  content: "";
+  position: absolute;
+  top: -50;
+  bottom: -50;
+  width: 200px;
+  height: 200px;
+}
+
+.wind-float h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.wind-float input[type="text"],
+.wind-float input[type="password"],
+.wind-float input[type="email"],
+.wind-float textarea {
+  width: 100%;
+  background: rgba(20, 20, 20, 0.2);
+  color: #e5e5e5;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.7rem 1rem;
+  line-height: 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+.wind-float input[type="text"]:focus,
+.wind-float input[type="password"]:focus,
+.wind-float input[type="email"]:focus,
+.wind-float textarea {
+  border-color: red;
+  box-shadow: 0 0 5px rgba(229,9,20,0.5);
+}
+
+.btn-group{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px 10px;
+}
+
+.btn{
+  background: red;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-weight: 600;
+}
+
+.btn:hover{
+  background: #b20710;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(229,9,20,0.3)
+}
+
+.input-group{
+  text-align: left;
+  padding: .5rem;
+  color: #e5e5e5;
+  position: relative;
+  z-index: 20;
+}
+
+.input-group input{
+  display: block;
+  width: 100%;
+}
+
+.input-group label{
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #e5e5e5;
+}
+
+.sign-up{
+  text-align: center;
+  font-size: small;
+}
+
+.sign-up a{
+  color: maroon;
+}
+
+.error-mes p{
+  justify-content: center;
+  text-align: center;
+  color: red;
+}
